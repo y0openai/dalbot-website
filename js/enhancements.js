@@ -1,5 +1,5 @@
 // ===================================
-// DalBot - Enhancement Scripts
+// PIANO - Enhancement Scripts
 // Stats Counter, Calculator, Countdown
 // ===================================
 
@@ -297,5 +297,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    console.log('DalBot Enhancements loaded successfully');
+    console.log('PIANO Enhancements loaded successfully');
 });

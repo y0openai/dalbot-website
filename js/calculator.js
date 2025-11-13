@@ -1,5 +1,5 @@
 // ===================================
-// DalBot - Profit Calculator
+// PIANO - Profit Calculator
 // ===================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -8,22 +8,22 @@ document.addEventListener('DOMContentLoaded', function() {
     // Calculator Configuration
     // ===================================
     const config = {
-        minInvestment: 500000,      // ₩500,000 / $375
-        maxInvestment: 10000000,    // ₩10,000,000 / $7,500
-        defaultInvestment: 5000000, // ₩5,000,000 / $3,750
-        bankRate: 0.04,             // 4% annual
-        kospiRate: 0.066,           // 6.6% annual
-        dalbotMonthlyRate: {
-            conservative: 0.02,      // 2% monthly
-            balanced: 0.03,          // 3% monthly
-            aggressive: 0.04         // 4% monthly
+        minInvestment: 500000,        // ₩500,000 / $375
+        maxInvestment: 100000000,     // ₩100,000,000 / $75,000 (1억)
+        defaultInvestment: 5000000,   // ₩5,000,000 / $3,750
+        bankRate: 0.04,               // 4% annual
+        kospiRate: 0.066,             // 6.6% annual
+        pianoMonthlyRate: {
+            conservative: 0.02,        // 2% monthly
+            balanced: 0.03,            // 3% monthly
+            aggressive: 0.04           // 4% monthly
         },
         defaultRiskLevel: 'balanced',
-        bankTaxRate: 0.154,         // 15.4% (14% income tax + 1.4% local tax)
-        cryptoTaxRate: 0,           // 0% (tax-free for crypto futures)
-        exchangeRate: 0.00075,      // KRW to USD conversion rate (1 KRW ≈ $0.00075)
-        currency: '₩',              // Current currency symbol
-        locale: 'ko-KR'             // Current locale for number formatting
+        bankTaxRate: 0.154,           // 15.4% (14% income tax + 1.4% local tax)
+        cryptoTaxRate: 0,             // 0% (tax-free for crypto futures)
+        exchangeRate: 0.00075,        // KRW to USD conversion rate (1 KRW ≈ $0.00075)
+        currency: '₩',                // Current currency symbol
+        locale: 'ko-KR'               // Current locale for number formatting
     };
     
     // ===================================
@@ -36,10 +36,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const bankInterest = document.getElementById('bankInterest');
     const bankTax = document.getElementById('bankTax');
     const bankReturn = document.getElementById('bankReturn');
-    const dalbotPrincipal = document.getElementById('dalbotPrincipal');
-    const dalbotProfit = document.getElementById('dalbotProfit');
-    const dalbotTax = document.getElementById('dalbotTax');
-    const dalbotReturn = document.getElementById('dalbotReturn');
+    const pianoPrincipal = document.getElementById('pianoPrincipal');
+    const pianoProfit = document.getElementById('pianoProfit');
+    const pianoTax = document.getElementById('pianoTax');
+    const pianoReturn = document.getElementById('pianoReturn');
     
     // ===================================
     // Initialize Calculator
@@ -53,9 +53,9 @@ document.addEventListener('DOMContentLoaded', function() {
         bankPrincipal: !!bankPrincipal,
         bankInterest: !!bankInterest,
         bankReturn: !!bankReturn,
-        dalbotPrincipal: !!dalbotPrincipal,
-        dalbotProfit: !!dalbotProfit,
-        dalbotReturn: !!dalbotReturn
+        pianoPrincipal: !!pianoPrincipal,
+        pianoProfit: !!pianoProfit,
+        pianoReturn: !!pianoReturn
     });
 
     if (slider) {
@@ -131,14 +131,14 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Calculate returns
         const bankResult = calculateBankReturn(investment);
-        const dalbotResult = calculateDalBotReturn(investment, config.defaultRiskLevel);
+        const pianoResult = calculatePianoReturn(investment, config.defaultRiskLevel);
 
         // Update principal displays
         if (bankPrincipal) {
             bankPrincipal.textContent = formatCurrency(investment);
         }
-        if (dalbotPrincipal) {
-            dalbotPrincipal.textContent = formatCurrency(investment);
+        if (pianoPrincipal) {
+            pianoPrincipal.textContent = formatCurrency(investment);
         }
 
         // Update bank interest/tax displays with animation
@@ -152,10 +152,10 @@ document.addEventListener('DOMContentLoaded', function() {
             animateValue(bankTax, currentTax, bankResult.tax, 300, '-');
         }
 
-        // Update DalBot profit displays with animation
-        if (dalbotProfit) {
-            const currentProfit = parseInt(dalbotProfit.textContent.replace(/[^\d]/g, '')) || 0;
-            animateValue(dalbotProfit, currentProfit, dalbotResult.profit, 300, '+');
+        // Update PIANO profit displays with animation
+        if (pianoProfit) {
+            const currentProfit = parseInt(pianoProfit.textContent.replace(/[^\d]/g, '')) || 0;
+            animateValue(pianoProfit, currentProfit, pianoResult.profit, 300, '+');
         }
 
         // Update total return displays with smooth animation
@@ -164,13 +164,13 @@ document.addEventListener('DOMContentLoaded', function() {
             animateValue(bankReturn, currentBank, bankResult.total, 300);
         }
 
-        if (dalbotReturn) {
-            const currentDalBot = parseInt(dalbotReturn.textContent.replace(/[^\d]/g, '')) || 0;
-            animateValue(dalbotReturn, currentDalBot, dalbotResult.total, 300);
+        if (pianoReturn) {
+            const currentPiano = parseInt(pianoReturn.textContent.replace(/[^\d]/g, '')) || 0;
+            animateValue(pianoReturn, currentPiano, pianoResult.total, 300);
         }
 
         // Update comparison metrics
-        updateComparisonMetrics(investment, bankResult.total, dalbotResult.total);
+        updateComparisonMetrics(investment, bankResult.total, pianoResult.total);
 
         // Update timeline projection
         updateTimelineProjection(investment, config.defaultRiskLevel);
@@ -196,9 +196,9 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 
-    function calculateDalBotReturn(principal, riskLevel) {
-        // Compound interest for DalBot (monthly compounding)
-        const monthlyRate = config.dalbotMonthlyRate[riskLevel];
+    function calculatePianoReturn(principal, riskLevel) {
+        // Compound interest for PIANO (monthly compounding)
+        const monthlyRate = config.pianoMonthlyRate[riskLevel];
         const months = 12;
         const total = principal * Math.pow(1 + monthlyRate, months);
         const profit = total - principal;
@@ -214,12 +214,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function calculateMonthlyReturn(principal, riskLevel) {
-        const monthlyRate = config.dalbotMonthlyRate[riskLevel];
+        const monthlyRate = config.pianoMonthlyRate[riskLevel];
         return Math.round(principal * monthlyRate);
     }
 
     function calculateTimelineReturns(principal, riskLevel, months) {
-        const monthlyRate = config.dalbotMonthlyRate[riskLevel];
+        const monthlyRate = config.pianoMonthlyRate[riskLevel];
         const total = principal * Math.pow(1 + monthlyRate, months);
         const profit = total - principal;
         return {
@@ -240,9 +240,9 @@ document.addEventListener('DOMContentLoaded', function() {
         sliderFill.style.width = percentage + '%';
     }
     
-    function updateComparisonMetrics(investment, bankReturn, dalbotReturn) {
-        const difference = dalbotReturn - bankReturn;
-        const percentageGain = ((dalbotReturn / bankReturn) - 1) * 100;
+    function updateComparisonMetrics(investment, bankReturn, pianoReturn) {
+        const difference = pianoReturn - bankReturn;
+        const percentageGain = ((pianoReturn / bankReturn) - 1) * 100;
 
         // Update any comparison displays
         const comparisonElements = document.querySelectorAll('[data-comparison]');
@@ -256,7 +256,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     element.textContent = `${percentageGain.toFixed(1)}% more`;
                     break;
                 case 'multiple':
-                    element.textContent = `${(dalbotReturn / bankReturn).toFixed(1)}x`;
+                    element.textContent = `${(pianoReturn / bankReturn).toFixed(1)}x`;
                     break;
             }
         });
@@ -388,7 +388,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const results = {
             investment: investment,
             bankReturn: calculateBankReturn(investment),
-            dalbotReturn: calculateDalBotReturn(investment, config.defaultRiskLevel),
+            pianoReturn: calculatePianoReturn(investment, config.defaultRiskLevel),
             riskLevel: config.defaultRiskLevel,
             timestamp: new Date().toISOString()
         };
@@ -467,10 +467,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===================================
     // Public API
     // ===================================
-    window.DalBotCalculator = {
+    window.PianoCalculator = {
         updateCalculator,
         calculateBankReturn,
-        calculateDalBotReturn,
+        calculatePianoReturn,
         calculateMonthlyReturn,
         exportResults,
         formatCurrency,

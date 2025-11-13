@@ -66,7 +66,7 @@
                 <span class="banner-divider">•</span>
                 <span class="banner-institutions">
                     <span class="inst-name">Bloomberg</span>
-                    <span class="inst-name">Goldman</span>
+                    <span class="inst-name">Goldman Sachs</span>
                     <span class="inst-name">Citadel</span>
                 </span>
             </div>
@@ -150,7 +150,7 @@
                         </div>
                         <div class="chart-bar highlight" data-value="42.58" data-label="DalBot">
                             <div class="bar-fill"></div>
-                            <span class="bar-label" data-i18n="hero.chart.dalbot">DalBot (42.58%)</span>
+                            <span class="bar-label" data-i18n="hero.chart.piano">DalBot (42.58%)</span>
                         </div>
                     </div>
                 </div>
@@ -245,7 +245,7 @@
     <section class="calculator-section">
         <div class="container">
             <div class="calculator-card">
-                <h2 class="section-title" data-i18n="calculator.title">Tired of low returns? Calculate your potential.</h2>
+                <h2 class="section-title" data-i18n="calculator.title">당신의 돈이 얼마나 빠르게 불어날까요?</h2>
                 
                 <!-- Scenario Tabs -->
                 <div class="calculator-scenarios">
@@ -261,7 +261,7 @@
                     </label>
                     <div class="slider-container">
                         <input type="range" id="investmentSlider" class="slider"
-                               min="500000" max="10000000" step="100000" value="5000000">
+                               min="500000" max="100000000" step="500000" value="5000000">
                         <div class="slider-track">
                             <div class="slider-fill" id="sliderFill"></div>
                         </div>
@@ -291,24 +291,24 @@
                         </div>
                     </div>
                     <div class="result-card highlight">
-                        <h3 data-i18n="calculator.dalbot">DalBot (1 Year)</h3>
+                        <h3 data-i18n="calculator.piano">DalBot (1 Year)</h3>
                         <div class="result-breakdown">
                             <div class="breakdown-item">
                                 <span class="breakdown-label" data-i18n="calculator.principal">Principal</span>
-                                <span class="breakdown-value" id="dalbotPrincipal">₩5,000,000</span>
+                                <span class="breakdown-value" id="pianoPrincipal">₩5,000,000</span>
                             </div>
                             <div class="breakdown-item">
                                 <span class="breakdown-label" data-i18n="calculator.profit">Profit</span>
-                                <span class="breakdown-value profit" id="dalbotProfit">+₩2,129,000</span>
+                                <span class="breakdown-value profit" id="pianoProfit">+₩2,129,000</span>
                             </div>
                             <div class="breakdown-item tax-free">
                                 <span class="breakdown-label" data-i18n="calculator.tax">Tax</span>
-                                <span class="breakdown-value tax-free-badge" id="dalbotTax" data-i18n="calculator.taxFree">₩0 (Tax-Free) ✓</span>
+                                <span class="breakdown-value tax-free-badge" id="pianoTax" data-i18n="calculator.taxFree">₩0 (Tax-Free) ✓</span>
                             </div>
                         </div>
                         <div class="result-total">
                             <span class="total-label" data-i18n="calculator.netAmount">Net Amount</span>
-                            <span class="result-value large" id="dalbotReturn">₩7,129,000</span>
+                            <span class="result-value large" id="pianoReturn">₩7,129,000</span>
                         </div>
                     </div>
                 </div>
@@ -348,64 +348,14 @@
     <!-- AI System Introduction Section -->
     <section class="ai-system-intro" id="ai-system">
         <div class="container">
-            <!-- New Section Header -->
-            <div class="ai-system-header">
-                <div class="header-eyebrow" data-i18n="aiSystem.header.eyebrow">개인 트레이더에게 Wall Street의 정교함을</div>
-                <h2 class="header-title" data-i18n="aiSystem.header.title">Intelligence That Learns While You Sleep</h2>
-                <p class="header-description" data-i18n="aiSystem.header.description">
-                    골드만삭스와 시타델이 수억 달러를 투자한<br>
-                    기관급 인프라를 이제 모두가 사용할 수 있습니다.
-                </p>
-            </div>
-
+            <!-- Unified Section Header -->
             <div class="section-header">
-                <h2 class="section-title" data-i18n="aiSystem.title">True AI Trading: Self-Learning and Evolving</h2>
+                <div class="header-eyebrow" data-i18n="aiSystem.header.eyebrow">어떻게 가능한가요?</div>
+                <h2 class="section-title" data-i18n="aiSystem.title">5개의 AI 모듈이 24/7 협업합니다</h2>
                 <p class="section-subtitle" data-i18n="aiSystem.subtitle">
-                    Order Flow analysis systems built by top hedge funds and investment banks with millions of dollars now implemented with AI and accessible to individual investors
+                    글로벌 톱 헤지펀드와 투자은행들이 천문학적 비용을 투자한 기술을<br>
+                    통합 시스템으로 구현했습니다
                 </p>
-            </div>
-
-            <!-- Comparison Table -->
-            <div class="comparison-grid">
-                <div class="comparison-card basic">
-                    <div class="comparison-icon">
-                        <span class="material-symbols-outlined">smart_toy</span>
-                    </div>
-                    <h3 data-i18n="aiSystem.basic.title">Traditional Bots</h3>
-                    <ul class="comparison-list">
-                        <li data-i18n="aiSystem.basic.item1">Fixed rules</li>
-                        <li data-i18n="aiSystem.basic.item2">Single indicators</li>
-                        <li data-i18n="aiSystem.basic.item3">Manual adjustments</li>
-                        <li data-i18n="aiSystem.basic.item4">Individual trader level</li>
-                    </ul>
-                </div>
-
-                <div class="comparison-card algo">
-                    <div class="comparison-icon">
-                        <span class="material-symbols-outlined">trending_up</span>
-                    </div>
-                    <h3 data-i18n="aiSystem.algo.title">Algorithmic Trading</h3>
-                    <ul class="comparison-list">
-                        <li data-i18n="aiSystem.algo.item1">Complex conditions</li>
-                        <li data-i18n="aiSystem.algo.item2">Backtest dependent</li>
-                        <li data-i18n="aiSystem.algo.item3">Periodic updates</li>
-                        <li data-i18n="aiSystem.algo.item4">Mid-size fund level</li>
-                    </ul>
-                </div>
-
-                <div class="comparison-card dalbot">
-                    <div class="comparison-badge" data-i18n="aiSystem.dalbot.badge">Institutional Grade</div>
-                    <div class="comparison-icon ai">
-                        <span class="material-symbols-outlined">psychology</span>
-                    </div>
-                    <h3 data-i18n="aiSystem.dalbot.title">DalBot AI</h3>
-                    <ul class="comparison-list highlight">
-                        <li data-i18n="aiSystem.dalbot.item1">Real-time learning</li>
-                        <li data-i18n="aiSystem.dalbot.item2">Institutional Order Flow</li>
-                        <li data-i18n="aiSystem.dalbot.item3">Autonomous evolution</li>
-                        <li data-i18n="aiSystem.dalbot.item4">Goldman/Citadel level</li>
-                    </ul>
-                </div>
             </div>
 
             <!-- Institutional Technology Implementation -->
@@ -445,6 +395,49 @@
                 </div>
             </div>
 
+            <!-- Comparison Table -->
+            <div class="comparison-grid">
+                <div class="comparison-card basic">
+                    <div class="comparison-icon">
+                        <span class="material-symbols-outlined">smart_toy</span>
+                    </div>
+                    <h3 data-i18n="aiSystem.basic.title">Traditional Bots</h3>
+                    <ul class="comparison-list">
+                        <li data-i18n="aiSystem.basic.item1">Fixed rules</li>
+                        <li data-i18n="aiSystem.basic.item2">Single indicators</li>
+                        <li data-i18n="aiSystem.basic.item3">Manual adjustments</li>
+                        <li data-i18n="aiSystem.basic.item4">Individual trader level</li>
+                    </ul>
+                </div>
+
+                <div class="comparison-card algo">
+                    <div class="comparison-icon">
+                        <span class="material-symbols-outlined">trending_up</span>
+                    </div>
+                    <h3 data-i18n="aiSystem.algo.title">Algorithmic Trading</h3>
+                    <ul class="comparison-list">
+                        <li data-i18n="aiSystem.algo.item1">Complex conditions</li>
+                        <li data-i18n="aiSystem.algo.item2">Backtest dependent</li>
+                        <li data-i18n="aiSystem.algo.item3">Periodic updates</li>
+                        <li data-i18n="aiSystem.algo.item4">Mid-size fund level</li>
+                    </ul>
+                </div>
+
+                <div class="comparison-card piano">
+                    <div class="comparison-badge" data-i18n="aiSystem.piano.badge">Institutional Grade</div>
+                    <div class="comparison-icon ai">
+                        <span class="material-symbols-outlined">psychology</span>
+                    </div>
+                    <h3 data-i18n="aiSystem.piano.title">DalBot AI</h3>
+                    <ul class="comparison-list highlight">
+                        <li data-i18n="aiSystem.piano.item1">Real-time learning</li>
+                        <li data-i18n="aiSystem.piano.item2">Institutional Order Flow</li>
+                        <li data-i18n="aiSystem.piano.item3">Autonomous evolution</li>
+                        <li data-i18n="aiSystem.piano.item4">Goldman/Citadel level</li>
+                    </ul>
+                </div>
+            </div>
+
             <!-- Institutional Cost Comparison Banner -->
             <div class="cost-comparison-banner">
                 <div class="cost-item">
@@ -463,7 +456,7 @@
                     <span class="material-symbols-outlined">arrow_downward</span>
                 </div>
                 <div class="cost-item highlight">
-                    <span class="cost-label" data-i18n="pricing.comparison.dalbot">DalBot AI</span>
+                    <span class="cost-label" data-i18n="pricing.comparison.piano">DalBot AI</span>
                     <span class="cost-value">$499<span class="cost-period">/month</span></span>
                 </div>
                 <p class="cost-savings" data-i18n="pricing.comparison.savings">Same technology, 1.2% of the cost</p>
@@ -479,48 +472,6 @@
                 <p class="section-subtitle" data-i18n="modules.subtitle">
                     Each module learns independently and works together to create optimal trading decisions
                 </p>
-            </div>
-
-            <!-- Why True AI Section -->
-            <div class="ai-explanation">
-                <h3 class="ai-explanation-title" data-i18n="modules.ai.title">Why This is True AI</h3>
-                <p class="ai-explanation-desc" data-i18n="modules.ai.desc">
-                    DalBot is not simply a bot following programmed rules. Every 60 seconds, it collects market data, and 5 independent AI modules make their own judgments, then synthesize them to autonomously execute optimal trading decisions.
-                </p>
-
-                <div class="ai-points-grid">
-                    <div class="ai-point">
-                        <div class="ai-point-icon">
-                            <span class="material-symbols-outlined">database</span>
-                        </div>
-                        <h4 data-i18n="modules.ai.point1.title">Real-time Data Collection</h4>
-                        <p data-i18n="modules.ai.point1.desc">Collects exchange data, order books, volume, and price movements every minute</p>
-                    </div>
-
-                    <div class="ai-point">
-                        <div class="ai-point-icon">
-                            <span class="material-symbols-outlined">psychology</span>
-                        </div>
-                        <h4 data-i18n="modules.ai.point2.title">Independent Decision-Making</h4>
-                        <p data-i18n="modules.ai.point2.desc">5 AI modules each analyze the market and make independent judgments</p>
-                    </div>
-
-                    <div class="ai-point">
-                        <div class="ai-point-icon">
-                            <span class="material-symbols-outlined">tune</span>
-                        </div>
-                        <h4 data-i18n="modules.ai.point3.title">Autonomous Adjustment</h4>
-                        <p data-i18n="modules.ai.point3.desc">AI autonomously adjusts position size, entry timing, and targets in real-time</p>
-                    </div>
-
-                    <div class="ai-point">
-                        <div class="ai-point-icon">
-                            <span class="material-symbols-outlined">trending_up</span>
-                        </div>
-                        <h4 data-i18n="modules.ai.point4.title">Continuous Learning</h4>
-                        <p data-i18n="modules.ai.point4.desc">Automatically optimizes strategies by comparing with historical patterns</p>
-                    </div>
-                </div>
             </div>
 
             <!-- Tab Navigation -->
@@ -819,6 +770,48 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why True AI Section -->
+            <div class="ai-explanation">
+                <h3 class="ai-explanation-title" data-i18n="modules.ai.title">Why This is True AI</h3>
+                <p class="ai-explanation-desc" data-i18n="modules.ai.desc">
+                    DalBot is not simply a bot following programmed rules. Every 60 seconds, it collects market data, and 5 independent AI modules make their own judgments, then synthesize them to autonomously execute optimal trading decisions.
+                </p>
+
+                <div class="ai-points-grid">
+                    <div class="ai-point">
+                        <div class="ai-point-icon">
+                            <span class="material-symbols-outlined">database</span>
+                        </div>
+                        <h4 data-i18n="modules.ai.point1.title">Real-time Data Collection</h4>
+                        <p data-i18n="modules.ai.point1.desc">Collects exchange data, order books, volume, and price movements every minute</p>
+                    </div>
+
+                    <div class="ai-point">
+                        <div class="ai-point-icon">
+                            <span class="material-symbols-outlined">psychology</span>
+                        </div>
+                        <h4 data-i18n="modules.ai.point2.title">Independent Decision-Making</h4>
+                        <p data-i18n="modules.ai.point2.desc">5 AI modules each analyze the market and make independent judgments</p>
+                    </div>
+
+                    <div class="ai-point">
+                        <div class="ai-point-icon">
+                            <span class="material-symbols-outlined">tune</span>
+                        </div>
+                        <h4 data-i18n="modules.ai.point4.title">Autonomous Adjustment</h4>
+                        <p data-i18n="modules.ai.point4.desc">AI autonomously adjusts position size, entry timing, and targets in real-time</p>
+                    </div>
+
+                    <div class="ai-point">
+                        <div class="ai-point-icon">
+                            <span class="material-symbols-outlined">trending_up</span>
+                        </div>
+                        <h4 data-i18n="modules.ai.point3.title">Continuous Learning</h4>
+                        <p data-i18n="modules.ai.point3.desc">Automatically optimizes strategies by comparing with historical patterns</p>
                     </div>
                 </div>
             </div>

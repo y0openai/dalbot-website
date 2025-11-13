@@ -16,7 +16,7 @@ const translations = {
         'hero.eyebrow': 'Institutional-Grade Technology for Individual Traders',
         'hero.slogan': 'Wall Street Sophistication<br>for Individual Traders',
         'hero.catchphrase': '10x Your Savings Returns',
-        'hero.subtitle': 'Bank Savings: 4%/year. DalBot: 3%/month average.\nNo conditions, for everyone, always available.',
+    'hero.subtitle': 'Bank Savings: 4%/year. DalBot: 3%/month average.\nNo conditions, for everyone, always available.',
         'hero.cta.demo': 'Try Free Demo',
         'hero.cta.video': 'Watch AI in Action',
         'hero.cta.watchVideo': 'Watch AI in Action',
@@ -24,7 +24,7 @@ const translations = {
         'hero.annual': 'Compound Returns (Annual)',
         'hero.chart.bank': 'Bank\n4%',
         'hero.chart.kospi': 'KOSPI\n6.6%',
-        'hero.chart.dalbot': 'DalBot\n42.58%',
+    'hero.chart.piano': 'DalBot\n42.58%',
         
         // Stats
         'stats.totalProfit': 'Total Profits Generated',
@@ -46,13 +46,13 @@ const translations = {
         'testimonial.profit': 'profit',
 
         // Calculator
-        'calculator.title': 'Tired of low returns? Calculate your potential.',
+        'calculator.title': 'How Fast Could Your Money Grow?',
         'calculator.conservative': 'Conservative (2% monthly)',
         'calculator.balanced': 'Balanced (3% monthly)',
         'calculator.aggressive': 'Aggressive (4% monthly)',
         'calculator.label': 'Your Investment Amount',
         'calculator.bank': 'Bank Savings (1 Year)',
-        'calculator.dalbot': 'DalBot (1 Year)',
+    'calculator.piano': 'DalBot (1 Year)',
         'calculator.principal': 'Principal',
         'calculator.interest': 'Interest',
         'calculator.profit': 'Profit',
@@ -101,22 +101,22 @@ const translations = {
         
         // FAQ
         'faq.title': 'Frequently Asked Questions',
-        'faq.q1': 'What is DalBot and how does it work?',
-        'faq.a1': 'DalBot is an AI-powered crypto trading system that automatically trades futures for you 24/7. We use the same Order Flow analysis techniques as Goldman Sachs and Citadel, but make it accessible for individual investors.',
-        'faq.q2': 'Do I need any crypto trading experience?',
-        'faq.a2': 'No experience needed! DalBot handles everything automatically. You just need to connect your exchange account and set your investment amount.',
-        'faq.q3': 'How much can I expect to earn?',
-        'faq.a3': 'Based on our backtesting from Jan-Oct 2025, DalBot achieved 42.58% annual returns (2-4% monthly, 3% average). However, past performance doesn\'t guarantee future results.',
+    'faq.q1': 'What is DalBot and how does it work?',
+    'faq.a1': 'DalBot is an AI-powered crypto trading system that automatically trades futures for you 24/7. We use the same Order Flow analysis techniques as Goldman Sachs and Citadel, but make it accessible for individual investors.',
+    'faq.q2': 'Do I need any crypto trading experience?',
+    'faq.a2': 'No experience needed! DalBot handles everything automatically. You just need to connect your exchange account and set your investment amount.',
+    'faq.q3': 'How much can I expect to earn?',
+    'faq.a3': 'Based on our backtesting from Jan-Oct 2025, DalBot achieved 42.58% annual returns (2-4% monthly, 3% average). However, past performance doesn\'t guarantee future results.',
         'faq.q4': 'Is my money safe? What are the risks?',
         'faq.a4': 'Your funds stay in your exchange account - we never hold them. However, futures trading involves risk of loss. Our worst month was -2.1%, but long-term returns have been positive.',
         'faq.q5': 'Which plan should I choose?',
         'faq.a5': 'If you\'re new, start with Profit Sharing - you only pay when you make money. For active traders with larger investments, the Subscription plan offers better value.',
         'faq.q6': 'Is it really the same technology as Bloomberg Terminal or Goldman Sachs?',
-        'faq.a6': 'Yes, the core technology is identical. DalBot AI implements VWAP, Volume Profile, L2/L3 Order Book analysis, Microstructure Analysis, Hidden Liquidity Detection, Order Flow Toxicity (VPIN), and Kyle\'s Lambda calculations. However, you can start from just $499/month instead of millions of dollars.',
-        'faq.q7': 'Can we compete with institutional investors?',
-        'faq.a7': 'DalBot AI uses the same analysis techniques as institutions while offering advantages: 24/7 uninterrupted operation (more consistent than human traders), emotion-free consistent execution (no psychological errors), and real-time learning for continuous improvement. We actually outperform average hedge fund returns.',
-        'faq.q8': 'Does AI really learn by itself?',
-        'faq.a8': 'Yes, DalBot AI continuously collects market data in real-time, compares it with historical patterns, and automatically optimizes strategies. Five independent AI modules each learn and evolve continuously.',
+    'faq.a6': 'Yes, the core technology is identical. DalBot AI implements VWAP, Volume Profile, L2/L3 Order Book analysis, Microstructure Analysis, Hidden Liquidity Detection, Order Flow Toxicity (VPIN), and Kyle\'s Lambda calculations. However, you can start from just $499/month instead of millions of dollars.',
+    'faq.q7': 'Can we compete with institutional investors?',
+    'faq.a7': 'DalBot AI uses the same analysis techniques as institutions while offering advantages: 24/7 uninterrupted operation (more consistent than human traders), emotion-free consistent execution (no psychological errors), and real-time learning for continuous improvement. We actually outperform average hedge fund returns.',
+    'faq.q8': 'Does AI really learn by itself?',
+    'faq.a8': 'Yes, DalBot AI continuously collects market data in real-time, compares it with historical patterns, and automatically optimizes strategies. Five independent AI modules each learn and evolve continuously.',
         'faq.q9': 'Why should I invest in cryptocurrency now?',
         'faq.a9': 'Three critical factors make crypto essential today: First, traditional banking products are no longer viable. With most financial institutions offering under 4% annual returns, we live in an era where bank deposits fail to preserve wealth—they merely slow its erosion. Second, crypto futures are one of the few remaining tax-free investment vehicles. While bank interest is taxed at 15.4%, crypto futures remain completely tax-exempt. Third, global monetary expansion is accelerating at an unprecedented pace. Central banks worldwide are printing money aggressively, causing fiat currency to lose purchasing power at 5-10% annually. Holding cash means watching your wealth silently evaporate. Crypto assets offer a hedge against this systemic devaluation while providing institutional-grade returns previously accessible only to the top 0.1%.',
 
@@ -126,11 +126,9 @@ const translations = {
         'hero.badge3': 'Citadel-Speed Execution',
 
         // AI System
-        'aiSystem.header.eyebrow': 'Wall Street Sophistication for Individual Traders',
-        'aiSystem.header.title': 'Intelligence That Learns While You Sleep',
-        'aiSystem.header.description': 'Goldman Sachs and Citadel invested hundreds of millions in institutional-grade infrastructure. Now accessible to everyone.',
-        'aiSystem.title': 'True AI Trading: Self-Learning and Evolving',
-        'aiSystem.subtitle': 'Order Flow analysis systems built by top hedge funds and investment banks with millions of dollars now implemented with AI and accessible to individual investors',
+        'aiSystem.header.eyebrow': 'How is this possible?',
+        'aiSystem.title': '5 AI Modules Working Together 24/7',
+        'aiSystem.subtitle': 'Sophisticated technology used exclusively by global top hedge funds · investment banks,<br>now implemented as an AI-integrated system',
         'aiSystem.basic.title': 'Retail Traders',
         'aiSystem.basic.item1': 'Simple bots & indicators',
         'aiSystem.basic.item2': 'Manual strategies',
@@ -141,19 +139,19 @@ const translations = {
         'aiSystem.algo.item2': 'Professional traders',
         'aiSystem.algo.item3': 'Periodic rebalancing',
         'aiSystem.algo.item4': '$100K~1M infrastructure',
-        'aiSystem.dalbot.title': 'DalBot: Institutional-Grade Infrastructure',
-        'aiSystem.dalbot.badge': 'Institutional Investor Grade',
-        'aiSystem.dalbot.item1': 'Real-time AI learning',
-        'aiSystem.dalbot.item2': 'Goldman/Citadel tech stack',
-        'aiSystem.dalbot.item3': 'Autonomous evolution',
-        'aiSystem.dalbot.item4': '$499/month accessible',
+    'aiSystem.piano.title': 'DalBot: Institutional-Grade Infrastructure',
+        'aiSystem.piano.badge': 'Institutional Investor Grade',
+        'aiSystem.piano.item1': 'Real-time AI learning',
+        'aiSystem.piano.item2': 'Goldman/Citadel tech stack',
+        'aiSystem.piano.item3': 'Autonomous evolution',
+        'aiSystem.piano.item4': '$499/month accessible',
         'aiSystem.tech.title': 'Institutional Investor-Grade Technology',
 
         // Modules
         'modules.title': 'Perfect Harmony of 5 AI Modules',
         'modules.subtitle': 'Each module learns independently and works together to create optimal trading decisions',
         'modules.ai.title': 'Next-Generation Intelligence System',
-        'modules.ai.desc': 'DalBot transcends legacy automated trading programs. Our system continuously monitors market conditions, enabling 5 independent AI modules to analyze, deliberate, and synthesize optimal trading decisions autonomously.',
+    'modules.ai.desc': 'DalBot thinks. Five independent AI modules analyze markets in real-time, make autonomous decisions, and execute optimal trades.',
         'modules.ai.point1.title': 'Continuous Data Intelligence',
         'modules.ai.point1.desc': 'Real-time collection and processing of exchange data, order flows, volume dynamics, and price movements',
         'modules.ai.point2.title': 'Independent Decision-Making',
@@ -175,7 +173,7 @@ const translations = {
         // Module Details - Order Flow
         'modules.orderflow.title': 'Order Flow AI',
         'modules.orderflow.benefit.title': 'Detect institutional moves within 3 seconds and follow them',
-        'modules.orderflow.benefit.desc': 'We\'ve implemented the Order Flow analysis technology that Goldman Sachs and Citadel invested billions to develop. The moment institutional investors start buying/selling, our AI detects it instantly and positions in the same direction.',
+        'modules.orderflow.benefit.desc': 'We\'ve implemented the Order Flow analysis technology that Goldman Sachs and Citadel developed with substantial investment. The moment institutional investors start buying/selling, our AI detects it instantly and positions in the same direction.',
         'modules.orderflow.benefit.point1': 'Instant large order detection:',
         'modules.orderflow.benefit.point1.desc': 'Real-time capture of multi-million dollar institutional trades',
         'modules.orderflow.benefit.point2': 'Predict market sentiment shifts:',
@@ -275,7 +273,7 @@ const translations = {
         'pricing.comparison.bloomberg': 'Bloomberg Terminal',
         'pricing.comparison.goldman': 'Goldman Sachs Marquee',
         'pricing.comparison.quant': 'Professional Quant Team',
-        'pricing.comparison.dalbot': 'DalBot AI',
+    'pricing.comparison.piano': 'DalBot AI',
         'pricing.comparison.savings': 'Same technology, 0.4% of the cost',
 
         // Marquee
@@ -315,7 +313,7 @@ const translations = {
         'hero.eyebrow': '개인 트레이더를 위한 기관급 기술',
         'hero.slogan': '개인 트레이더에게<br>Wall Street의 정교함을',
         'hero.catchphrase': '적금 금리의 10배 수익',
-        'hero.subtitle': '은행 적금: 연 4%. DalBot: 월 평균 3%.\n조건 없이, 누구나, 언제나.',
+    'hero.subtitle': '은행 적금: 연 4%. DalBot: 월 평균 3%.\n조건 없이, 누구나, 언제나.',
         'hero.cta.demo': '무료 데모 체험',
         'hero.cta.video': 'AI 작동 영상 보기',
         'hero.cta.watchVideo': 'AI 작동 영상 보기',
@@ -323,7 +321,7 @@ const translations = {
         'hero.annual': '복리 수익률(연)',
         'hero.chart.bank': '은행\n4%',
         'hero.chart.kospi': 'KOSPI\n6.6%',
-        'hero.chart.dalbot': 'DalBot\n42.58%',
+    'hero.chart.piano': 'DalBot\n42.58%',
         
         // Stats
         'stats.totalProfit': '총 수익 창출',
@@ -345,13 +343,13 @@ const translations = {
         'testimonial.profit': '수익',
 
         // Calculator
-        'calculator.title': '수익 비교 계산기 (적금 vs DalBot)',
+        'calculator.title': '당신의 돈이 얼마나 빠르게 불어날까요?',
         'calculator.conservative': '보수적 (월 2%)',
         'calculator.balanced': '균형잡힌 (월 3%)',
         'calculator.aggressive': '공격적 (월 4%)',
         'calculator.label': '투자 금액',
         'calculator.bank': '은행 적금 (1년)',
-        'calculator.dalbot': 'DalBot (1년)',
+    'calculator.piano': 'DalBot (1년)',
         'calculator.principal': '원금',
         'calculator.interest': '이자',
         'calculator.profit': '수익',
@@ -400,22 +398,22 @@ const translations = {
         
         // FAQ
         'faq.title': '자주 묻는 질문',
-        'faq.q1': 'DalBot는 무엇이고 어떻게 작동하나요?',
-        'faq.a1': 'DalBot는 AI 기반 암호화폐 거래 시스템으로 24시간 자동으로 선물 거래를 수행합니다. Goldman Sachs, Citadel과 동일한 Order Flow 분석 기법을 사용하지만 개인투자자도 이용할 수 있게 만들었습니다.',
+    'faq.q1': 'DalBot는 무엇이고 어떻게 작동하나요?',
+    'faq.a1': 'DalBot는 AI 기반 암호화폐 거래 시스템으로 24시간 자동으로 선물 거래를 수행합니다. Goldman Sachs, Citadel과 동일한 Order Flow 분석 기법을 사용하지만 개인투자자도 이용할 수 있게 만들었습니다.',
         'faq.q2': '암호화폐 거래 경험이 필요한가요?',
-        'faq.a2': '전혀 필요 없습니다! DalBot가 모든 것을 자동으로 처리합니다. 거래소 계정을 연결하고 투자 금액만 설정하면 됩니다.',
+    'faq.a2': '전혀 필요 없습니다! DalBot가 모든 것을 자동으로 처리합니다. 거래소 계정을 연결하고 투자 금액만 설정하면 됩니다.',
         'faq.q3': '얼마나 벌 수 있나요?',
-        'faq.a3': '2025년 1-10월 백테스팅 기준, DalBot는 연 42.58% 수익률(월 2-4%, 평균 3%)을 달성했습니다. 단, 과거 성과가 미래 수익을 보장하지는 않습니다.',
+    'faq.a3': '2025년 1-10월 백테스팅 기준, DalBot는 연 42.58% 수익률(월 2-4%, 평균 3%)을 달성했습니다. 단, 과거 성과가 미래 수익을 보장하지는 않습니다.',
         'faq.q4': '내 돈은 안전한가요? 위험은 무엇인가요?',
         'faq.a4': '자금은 거래소 계정에 있으며, 저희가 보관하지 않습니다. 단, 선물거래는 손실 위험이 있습니다. 최악의 달은 -2.1%였지만, 장기 수익은 양호했습니다.',
         'faq.q5': '어떤 플랜을 선택해야 하나요?',
         'faq.a5': '처음이라면 수익공유로 시작하세요 - 돈을 벌 때만 수수료를 냅니다. 큰 금액을 투자하는 적극적인 트레이더라면 구독제가 더 유리합니다.',
         'faq.q6': '정말 Bloomberg Terminal이나 Goldman Sachs와 동일한 기술인가요?',
-        'faq.a6': '네, 핵심 기술은 동일합니다. DalBot AI는 VWAP, Volume Profile, L2/L3 호가창 분석, Microstructure Analysis, Hidden Liquidity Detection, Order Flow Toxicity (VPIN), Kyle\'s Lambda 계산을 구현했습니다. 단, 수백만 달러가 아닌 월 $499부터 시작할 수 있습니다.',
+    'faq.a6': '네, 핵심 기술은 동일합니다. DalBot AI는 VWAP, Volume Profile, L2/L3 호가창 분석, Microstructure Analysis, Hidden Liquidity Detection, Order Flow Toxicity (VPIN), Kyle\'s Lambda 계산을 구현했습니다. 단, 수백만 달러가 아닌 월 $499부터 시작할 수 있습니다.',
         'faq.q7': '기관 투자자와 경쟁할 수 있나요?',
-        'faq.a7': 'DalBot AI는 기관과 동일한 분석 기법을 사용하면서도 장점이 있습니다: 24/7 중단 없는 운영(인간 트레이더보다 일관적), 감정 없는 일관된 실행(심리적 오류 없음), 실시간 학습을 통한 지속적 개선. 실제로 평균 헤지펀드 수익률을 능가합니다.',
+    'faq.a7': 'DalBot AI는 기관과 동일한 분석 기법을 사용하면서도 장점이 있습니다: 24/7 중단 없는 운영(인간 트레이더보다 일관적), 감정 없는 일관된 실행(심리적 오류 없음), 실시간 학습을 통한 지속적 개선. 실제로 평균 헤지펀드 수익률을 능가합니다.',
         'faq.q8': 'AI가 정말 스스로 학습하나요?',
-        'faq.a8': '네, DalBot AI는 실시간으로 지속적으로 시장 데이터를 수집하고, 과거 패턴과 비교하며, 자동으로 전략을 최적화합니다. 5개의 독립적인 AI 모듈이 각자 학습하고 진화합니다.',
+    'faq.a8': '네, DalBot AI는 실시간으로 지속적으로 시장 데이터를 수집하고, 과거 패턴과 비교하며, 자동으로 전략을 최적화합니다. 5개의 독립적인 AI 모듈이 각자 학습하고 진화합니다.',
         'faq.q9': '왜 지금 암호화폐 투자가 필요한가요?',
         'faq.a9': '세 가지 결정적 이유가 있습니다. 첫째, 전통적인 금융상품은 더 이상 유효하지 않습니다. 대부분의 금융기관이 연 4% 미만의 수익률을 제공하는 시대에, 은행 예금은 자산을 지키는 것이 아니라 단지 손실 속도를 늦출 뿐입니다. 둘째, 암호화폐는 현존하는 몇 안 되는 비과세 투자 수단입니다. 은행 이자는 15.4%의 세금이 부과되지만, 암호화폐 선물거래는 완전히 비과세입니다. 셋째, 전 세계적인 통화 팽창이 전례 없는 속도로 가속화되고 있습니다. 각국 중앙은행들이 공격적으로 화폐를 발행하면서 명목화폐의 구매력이 연간 5-10%씩 감소하고 있습니다. 현금을 보유하는 것은 자산 가치가 조용히 증발하는 것을 지켜보는 것과 같습니다. 암호화폐 자산은 이러한 시스템적 가치 하락에 대한 헤지 수단이며, 동시에 상위 0.1%만 접근 가능했던 기관급 수익률을 제공합니다.',
 
@@ -425,11 +423,9 @@ const translations = {
         'hero.badge3': 'Citadel-Speed Execution',
 
         // AI System
-        'aiSystem.header.eyebrow': '개인 트레이더를 위한 Wall Street 수준의 정교함',
-        'aiSystem.header.title': 'Intelligence That Learns While You Sleep',
-        'aiSystem.header.description': '골드만삭스와 시타델이 천문학적 금액을 투자한 기관급 인프라를 이제 모두가 사용할 수 있습니다.',
-        'aiSystem.title': '진정한 AI 트레이딩: 스스로 학습하고 진화합니다',
-        'aiSystem.subtitle': '탑 헤지펀드와 투자은행이 구축한 Order Flow 분석 시스템을 AI로 구현하여 개인 투자자도 접근 가능하게 만들었습니다',
+        'aiSystem.header.eyebrow': '어떻게 가능한가요?',
+        'aiSystem.title': '5개의 AI 모듈이 24/7 협업합니다',
+        'aiSystem.subtitle': '글로벌 TOP 헤지펀드·투자은행만 사용해온 정교한 기술을<br>AI 통합 시스템으로 구현했습니다',
         'aiSystem.basic.title': '개인 투자자',
         'aiSystem.basic.item1': '단순 봇 & 지표',
         'aiSystem.basic.item2': '수동 전략 관리',
@@ -440,19 +436,19 @@ const translations = {
         'aiSystem.algo.item2': '전문 트레이더 고용',
         'aiSystem.algo.item3': '주기적 리밸런싱',
         'aiSystem.algo.item4': '1억~10억 인프라',
-        'aiSystem.dalbot.title': 'DalBot',
-        'aiSystem.dalbot.badge': '기관투자자급 인프라',
-        'aiSystem.dalbot.item1': '실시간 AI 학습',
-        'aiSystem.dalbot.item2': 'Goldman/Citadel 기술',
-        'aiSystem.dalbot.item3': '자율 진화 시스템',
-        'aiSystem.dalbot.item4': '월 $499로 이용 가능',
+    'aiSystem.piano.title': 'DalBot',
+        'aiSystem.piano.badge': '기관투자자급 인프라',
+        'aiSystem.piano.item1': '실시간 AI 학습',
+        'aiSystem.piano.item2': 'Goldman/Citadel 기술',
+        'aiSystem.piano.item3': '자율 진화 시스템',
+        'aiSystem.piano.item4': '월 $499로 이용 가능',
         'aiSystem.tech.title': ' 지능형 시스템 ',
 
         // Modules
         'modules.title': '5대 AI 모듈의 완벽한 조화',
         'modules.subtitle': '각 모듈이 독립적으로 학습하고 함께 작동하여 최적의 거래 결정을 만듭니다',
         'modules.ai.title': '차세대 지능형 시스템',
-        'modules.ai.desc': 'DalBot는 과거의 자동 매매 프로그램을 뛰어넘습니다. 실시간으로 시장 상황을 모니터링하며, 5개의 독립적인 AI 모듈이 분석하고 판단한 결과를 종합하여 최적의 거래 결정을 자율적으로 실행합니다.',
+    'modules.ai.desc': 'DalBot는 생각하는 AI입니다. 5개의 독립 모듈이 실시간으로 시장을 분석하고, 스스로 판단하여 최적의 거래를 실행합니다.',
         'modules.ai.point1.title': '지속적 데이터 인텔리전스',
         'modules.ai.point1.desc': '거래소 데이터, 주문흐름, 거래량 동향, 가격 변동을 실시간으로 수집 및 처리',
         'modules.ai.point2.title': '독립적 의사결정',
@@ -474,7 +470,7 @@ const translations = {
         // Module Details - Order Flow
         'modules.orderflow.title': '주문흐름 분석 AI',
         'modules.orderflow.benefit.title': '대형 투자자의 움직임을 3초 안에 포착해 따라갑니다',
-        'modules.orderflow.benefit.desc': '골드만삭스와 시타델이 천문학적 비용을 투자해 개발한 Order Flow 분석 기술을 AI로 구현했습니다. 기관 투자자들이 매수/매도를 시작하는 순간, AI가 즉시 감지하고 같은 방향으로 포지션을 잡습니다.',
+        'modules.orderflow.benefit.desc': '골드만삭스와 시타델이 막대한 비용으로 개발한 Order Flow 분석 기술을 AI로 구현했습니다. 기관 투자자들이 매수/매도를 시작하는 순간, AI가 즉시 감지하고 같은 방향으로 포지션을 잡습니다.',
         'modules.orderflow.benefit.point1': '대형 주문 즉시 감지:',
         'modules.orderflow.benefit.point1.desc': '기관의 수백만 달러 거래를 실시간 포착',
         'modules.orderflow.benefit.point2': '시장 심리 변화 예측:',
@@ -570,6 +566,13 @@ const translations = {
         'modules.tp.t3': 'Trend Sustainability (추세 지속성) - 이 추세가 얼마나 더 갈지 예측',
         'modules.tp.t4': '매 캔들마다 재계산 - 목표가를 다시 조정하여 최적화',
 
+        // Pricing Comparison
+        'pricing.comparison.bloomberg': 'Bloomberg Terminal',
+        'pricing.comparison.goldman': 'Goldman Sachs Marquee',
+        'pricing.comparison.quant': '전문 퀀트 팀',
+    'pricing.comparison.piano': 'DalBot AI',
+        'pricing.comparison.savings': '동일한 기술, 비용은 1.2%',
+
         // Marquee
         'marquee.item1': 'Bloomberg Terminal 기술',
         'marquee.item2': 'Goldman Sachs 알고리즘',
@@ -577,13 +580,6 @@ const translations = {
         'marquee.item4': '개인 트레이더를 위한 기관급 기술',
         'marquee.item5': 'Two Sigma AI 모델',
         'marquee.item6': '누구나 접근 가능',
-
-        // Pricing Comparison
-        'pricing.comparison.bloomberg': 'Bloomberg Terminal',
-        'pricing.comparison.goldman': 'Goldman Sachs Marquee',
-        'pricing.comparison.quant': '전문 퀀트 팀',
-        'pricing.comparison.dalbot': 'DalBot AI',
-        'pricing.comparison.savings': '동일한 기술, 비용은 1.2%',
 
         // Sticky Banner
         'banner.main': '개인 트레이더를 위한 기관급 기술',
@@ -691,15 +687,15 @@ class LanguageManager {
         
         // Update page title
         document.title = lang === 'en' 
-            ? 'DalBot - AI Crypto Trading | 10x Your Savings Returns'
+              ? 'DalBot - AI Crypto Trading | 10x Your Savings Returns'
             : 'DalBot - AI 암호화폐 트레이딩 | 적금 금리의 10배 수익';
         
         // Update currency displays
         this.updateCurrency();
 
         // Trigger calculator currency update
-        if (window.DalBotCalculator && window.DalBotCalculator.setCurrency) {
-            window.DalBotCalculator.setCurrency(lang);
+        if (window.PianoCalculator && window.PianoCalculator.setCurrency) {
+            window.PianoCalculator.setCurrency(lang);
         }
     }
     
@@ -711,20 +707,20 @@ class LanguageManager {
         if (slider) {
             if (this.currentLang === 'en') {
                 // Convert to USD for English
-                const minUSD = Math.round(500000 * exchangeRate);    // $375
-                const maxUSD = Math.round(10000000 * exchangeRate);  // $7,500
-                const defaultUSD = Math.round(5000000 * exchangeRate); // $3,750
+                const minUSD = Math.round(500000 * exchangeRate);         // $375
+                const maxUSD = Math.round(100000000 * exchangeRate);      // $75,000
+                const defaultUSD = Math.round(5000000 * exchangeRate);    // $3,750
 
                 slider.min = minUSD;
                 slider.max = maxUSD;
                 slider.value = defaultUSD;
-                slider.step = 50; // $50 steps for USD
+                slider.step = 500; // $500 steps for USD
             } else {
                 // Use KRW for Korean
-                slider.min = 500000;      // ₩500,000
-                slider.max = 10000000;    // ₩10,000,000
-                slider.value = 5000000;   // ₩5,000,000
-                slider.step = 100000;     // ₩100,000 steps for KRW
+                slider.min = 500000;         // ₩500,000
+                slider.max = 100000000;      // ₩100,000,000 (1억)
+                slider.value = 5000000;      // ₩5,000,000
+                slider.step = 500000;        // ₩500,000 steps for KRW
             }
         }
     }
